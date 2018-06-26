@@ -15,10 +15,9 @@
 		<property name="hibernate.show_sql">true</property>
 
       <!--  Class Mapping -->
-		<mapping class="com.rkyash.beans.Student"></mapping>
-		<!-- <mapping class="com.rkyash.beans.Admin"></mapping>
-		<mapping class="com.rkyash.beans.User"></mapping> -->
-		
+		<mapping class="com.rkyash.bean.Student"/>
+		<mapping class="com.rkyash.bean.Admin"/>
+		<mapping class="com.rkyash.bean.UserMaster"/>
 
 
 

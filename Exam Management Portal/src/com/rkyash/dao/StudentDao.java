@@ -2,7 +2,7 @@ package com.rkyash.dao;
 
 import java.util.List;
 
-import com.rkyash.beans.Student;
+import com.rkyash.bean.Student;
 
 public interface StudentDao {
 	

@@ -1,4 +1,4 @@
-package com.rkyash.beans;
+package com.rkyash.bean;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,7 +10,7 @@ public class Admin {
 
 	@Id
 	@GeneratedValue
-	private int adminId;
+	private long adminId;
 	private String adminName;
 	@Column(unique=true)
 	private String adminUserName;
@@ -23,10 +23,10 @@ public class Admin {
 		this.adminUserName = adminUserName;
 		this.adminPassword = adminPassword;
 	}
-	public int getAdminId() {
+	public long getAdminId() {
 		return adminId;
 	}
-	public void setAdminId(int adminId) {
+	public void setAdminId(long adminId) {
 		this.adminId = adminId;
 	}
 	public String getAdminUserName() {

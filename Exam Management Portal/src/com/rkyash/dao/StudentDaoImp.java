@@ -5,7 +5,7 @@ import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.rkyash.beans.Student;
+import com.rkyash.bean.Student;
 
 public class StudentDaoImp implements StudentDao {
 
