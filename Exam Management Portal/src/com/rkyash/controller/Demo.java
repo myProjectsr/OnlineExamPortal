@@ -26,8 +26,9 @@ public class Demo extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		SessionFactory sessionFactory=HibernateCnfg.getHibenateCnfg();
 		PrintWriter out=response.getWriter();
+		SessionFactory sessionFactory=HibernateCnfg.getHibenateCnfg();
+		
 		out.println("Table Create , Done");
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}

@@ -9,7 +9,7 @@ public class Student {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long studentId;
 	private String name,address,contact,admissionDate,course,password;
-	@Column(unique= true, nullable= false)
+	@Column(unique= true, nullable= true)
 	private String username;
 	float fees;
 	

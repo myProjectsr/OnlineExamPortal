@@ -1,6 +1,5 @@
 package com.rkyash.helpResourse;
 
-import javax.imageio.spi.ServiceRegistry;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
