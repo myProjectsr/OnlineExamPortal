@@ -9,7 +9,7 @@ public class HibernateCnfg {
 	static SessionFactory sessionFactory;
 	
 	
-	public static SessionFactory getHibenateCnfg()
+	public static SessionFactory getHibenateCn()
 	{
 		Configuration cfg= new Configuration();
 		cfg.configure("hibernate.cfg.xml");

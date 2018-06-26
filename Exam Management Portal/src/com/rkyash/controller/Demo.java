@@ -14,7 +14,10 @@ import org.hibernate.SessionFactory;
 import com.rkyash.helpResourse.HibernateCnfg;
 
 
-@WebServlet("/Demo")
+
+
+
+@WebServlet("/demo")
 public class Demo extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -27,7 +30,9 @@ public class Demo extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		PrintWriter out=response.getWriter();
-		SessionFactory sessionFactory=HibernateCnfg.getHibenateCnfg();
+		//SessionFactory sessionFactory=HibernateCnfg.getHibenateCnfg();
+		SessionFactory sessionFactory;
+		sessionFactory=HibernateCnfg.getHibenateCn();
 		
 		out.println("Table Create , Done");
 		response.getWriter().append("Served at: ").append(request.getContextPath());
