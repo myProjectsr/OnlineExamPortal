@@ -17,7 +17,7 @@
       <!--  Class Mapping -->
 		<mapping class="com.rkyash.bean.Student"/>
 		<mapping class="com.rkyash.bean.Admin"/>
-		<mapping class="com.rkyash.bean.UserMaster"/>
+		<mapping class="com.rkyash.bean.Roles"/>
 
 
 

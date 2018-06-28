@@ -9,9 +9,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
-import com.rkyash.helpResourse.HibernateCnfg;
+import com.rkyash.util.HibernateUtil;
 
 
 
@@ -31,8 +32,9 @@ public class Demo extends HttpServlet {
 		
 		PrintWriter out=response.getWriter();
 		//SessionFactory sessionFactory=HibernateCnfg.getHibenateCnfg();
-		SessionFactory sessionFactory;
-		sessionFactory=HibernateCnfg.getHibenateCn();
+		//SessionFactory sessionFactory;
+		Session session;
+		session= HibernateUtil.getSession();
 		
 		out.println("Table Create , Done");
 		response.getWriter().append("Served at: ").append(request.getContextPath());
